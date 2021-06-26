@@ -48,11 +48,11 @@ class _MyAppState extends State<MyApp> {
     BottomNavigationBarItem(
       label: 'Profile',
       icon: Icon(
-        Icons.people_alt_outlined,
+        Icons.account_circle_outlined,
         color: Colors.white,
       ),
       activeIcon: Icon(
-        Icons.people_alt,
+        Icons.account_circle,
         color: Colors.white,
       ),
     )
@@ -82,6 +82,7 @@ class _MyAppState extends State<MyApp> {
               bottomIndex = value;
             });
           },
+          showSelectedLabels: false,
           showUnselectedLabels: false,
         ),
       ),
