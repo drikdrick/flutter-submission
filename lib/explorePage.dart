@@ -10,8 +10,15 @@ class ExplorePage extends StatefulWidget {
 class _ExplorePageState extends State<ExplorePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("Ini halaman eksplore"),
+    return SafeArea(
+      child: Container(
+        child: Text(
+          "Ini halaman eksplore",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+      ),
     );
   }
 }
